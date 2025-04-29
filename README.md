@@ -88,7 +88,7 @@ sudo mkdir -p /var/ftp/dev /var/ftp/qa /var/ftp/client
 sudo systemctl restart vsftpd
 ```
 
-*Capture d'écran : Configuration de vsftpd.conf*
+![Configuration de vsftpd.conf](vsftpd_conf.png)
 
 ### Étape 2 : Création et Gestion des Utilisateurs
 
@@ -145,7 +145,7 @@ sudo ln -sf /var/ftp/qa /home/qateam/qa
 sudo ln -sf /var/ftp/client /home/clientuser/client
 ```
 
-*Capture d'écran : Permissions des répertoires*
+![Permissions des répertoires](permissions.png)
 
 ### Étape 3 : Installation et Configuration de FileZilla
 
@@ -170,7 +170,7 @@ sudo apt install filezilla
 
 Vérification que chaque utilisateur peut se connecter et accéder à son répertoire spécifique.
 
-*Capture d'écran : Configuration FileZilla*
+![Configuration FileZilla](filezilla_config.png)
 
 ### Étape 4 : Transfert de Fichiers
 
@@ -203,9 +203,29 @@ sudo bash -c 'echo "Test pour clientUser" > /var/ftp/client/test.txt'
 - **Utilisateur ftpadmin** :
   - Accès à tous les répertoires et transferts (succès).
 
-*Capture d'écran : Transferts FileZilla*
+![Transferts FileZilla](file_transfers.png)
 
-### Étape 5 : Documentation et Livraison
+### Images du Projet
+
+Voici les principales captures d'écran montrant le fonctionnement du serveur FTP avec les différents utilisateurs :
+
+### Image 1 : Connexion utilisateur clientuser
+![Connexion clientuser](image1.png)
+*Capture d'écran montrant la connexion de l'utilisateur clientuser avec accès au répertoire client en lecture seule*
+
+### Image 2 : Connexion utilisateur qateam
+![Connexion qateam](image2.png)
+*Capture d'écran montrant la connexion de l'utilisateur qateam avec accès au répertoire qa en lecture seule*
+
+### Image 3 : Transfert de fichier vers le répertoire dev
+![Transfert vers dev](image3.png)
+*Capture d'écran montrant un transfert de fichier réussi vers le répertoire dev*
+
+### Image 4 : Connexion utilisateur devteam
+![Connexion devteam](image4.png)
+*Capture d'écran montrant la connexion de l'utilisateur devteam avec accès au répertoire dev en lecture/écriture*
+
+## Étape 5 : Documentation et Livraison
 
 #### Création du dépôt GitHub :
 
@@ -244,7 +264,7 @@ Création d'un PowerPoint avec :
 
 Répétition pour respecter la limite de 10 minutes.
 
-*Capture d'écran : Présentation PowerPoint*
+![Présentation PowerPoint](presentation.png)
 
 ## Résolution des Problèmes Rencontrés
 
@@ -280,7 +300,7 @@ Lors de la mise en œuvre, plusieurs problèmes ont été rencontrés et résolu
     sudo bash -c 'echo "Test pour DevTeam" > /var/ftp/dev/test.txt'
     ```
 
-*Capture d'écran : Erreurs résolues*
+![Erreurs résolues](errors_resolved.png)
 
 ## Conseils Pratiques
 
@@ -300,7 +320,6 @@ Lors de la mise en œuvre, plusieurs problèmes ont été rencontrés et résolu
   ```
 
 - **Tests rigoureux** : Teste chaque utilisateur séparément pour confirmer les restrictions d'accès.
-- **Présentation** : Prépare une version PDF de ta présentation pour la revue.
 
 ## Pistes Avancées
 
@@ -315,4 +334,4 @@ Lors de la mise en œuvre, plusieurs problèmes ont été rencontrés et résolu
 
 ## Conclusion
 
-Ce projet a permis de maîtriser la configuration d'un serveur FTP sécurisé, la gestion des permissions sous Linux, et l'utilisation d'un client FTP. Les défis rencontrés (permissions, TLS, chroot) ont été surmontés grâce à une analyse méthodique et des ajustements précis. Le dépôt GitHub et la présentation PowerPoint sont prêts pour la revue, avec une documentation complète et des captures d'écran illustrant chaque étape.
+Ce projet a permis de maîtriser la configuration d'un serveur FTP sécurisé, la gestion des permissions sous Linux, et l'utilisation d'un client FTP. Les défis rencontrés (permissions, TLS, chroot) ont été surmontés grâce à une analyse méthodique et des ajustements précis. 
