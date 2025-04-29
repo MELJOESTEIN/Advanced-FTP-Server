@@ -210,19 +210,19 @@ sudo bash -c 'echo "Test pour clientUser" > /var/ftp/client/test.txt'
 Voici les principales captures d'écran montrant le fonctionnement du serveur FTP avec les différents utilisateurs :
 
 ### Image 1 : Connexion utilisateur clientuser
-![Connexion clientuser](Screenshot%20from%2020250429%20123718.png)
+![Connexion clientuser](Screenshot from 20250429 123718.png)
 *Capture d'écran montrant la connexion de l'utilisateur clientuser avec accès au répertoire client en lecture seule*
 
 ### Image 2 : Connexion utilisateur qateam
-![Connexion qateam](Screenshot%20from%2020250429%20123655.png)
+![Connexion qateam](Screenshot from 20250429 123655.png)
 *Capture d'écran montrant la connexion de l'utilisateur qateam avec accès au répertoire qa en lecture seule*
 
 ### Image 3 : Transfert de fichier vers le répertoire dev
-![Transfert vers dev](Screenshot%20from%2020250429%20123430.png)
+![Transfert vers dev](Screenshot from 20250429 123430.png)
 *Capture d'écran montrant un transfert de fichier réussi vers le répertoire dev*
 
 ### Image 4 : Connexion utilisateur devteam
-![Connexion devteam](Screenshot%20from%2020250429%20123417.png)
+![Connexion devteam](Screenshot from 20250429 123417.png)
 *Capture d'écran montrant la connexion de l'utilisateur devteam avec accès au répertoire dev en lecture/écriture*
 
 ## Étape 5 : Documentation et Livraison
