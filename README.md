@@ -210,19 +210,19 @@ sudo bash -c 'echo "Test pour clientUser" > /var/ftp/client/test.txt'
 Voici les principales captures d'écran montrant le fonctionnement du serveur FTP avec les différents utilisateurs :
 
 ### Image 1 : Connexion utilisateur clientuser
-![Connexion clientuser](Screenshot from 20250429 123718.png)
+![Connexion clientuser](clientuser_connection.png)
 *Capture d'écran montrant la connexion de l'utilisateur clientuser avec accès au répertoire client en lecture seule*
 
 ### Image 2 : Connexion utilisateur qateam
-![Connexion qateam](Screenshot from 20250429 123655.png)
+![Connexion qateam](qateam_connection.png)
 *Capture d'écran montrant la connexion de l'utilisateur qateam avec accès au répertoire qa en lecture seule*
 
 ### Image 3 : Transfert de fichier vers le répertoire dev
-![Transfert vers dev](Screenshot from 20250429 123430.png)
+![Transfert vers dev](dev_file_transfer.png)
 *Capture d'écran montrant un transfert de fichier réussi vers le répertoire dev*
 
 ### Image 4 : Connexion utilisateur devteam
-![Connexion devteam](Screenshot from 20250429 123417.png)
+![Connexion devteam](devteam_connection.png)
 *Capture d'écran montrant la connexion de l'utilisateur devteam avec accès au répertoire dev en lecture/écriture*
 
 ## Étape 5 : Documentation et Livraison
@@ -254,6 +254,17 @@ git remote add origin <URL_DU_DÉPÔT>
 git push -u origin main
 ```
 
+#### Préparation de la présentation :
+
+Création d'un PowerPoint avec :
+- Introduction : Contexte et objectifs.
+- Étapes : Installation, configuration, tests.
+- Résultats : Captures d'écran des transferts.
+- Conclusion : Résumé et leçons apprises.
+
+Répétition pour respecter la limite de 10 minutes.
+
+![Présentation PowerPoint](presentation.png)
 
 ## Résolution des Problèmes Rencontrés
 
@@ -324,4 +335,4 @@ Lors de la mise en œuvre, plusieurs problèmes ont été rencontrés et résolu
 
 ## Conclusion
 
-Ce projet a permis de maîtriser la configuration d'un serveur FTP sécurisé, la gestion des permissions sous Linux, et l'utilisation d'un client FTP. Les défis rencontrés (permissions, TLS, chroot) ont été surmontés grâce à une analyse méthodique et des ajustements précis. L
+Ce projet a permis de maîtriser la configuration d'un serveur FTP sécurisé, la gestion des permissions sous Linux, et l'utilisation d'un client FTP. Les défis rencontrés (permissions, TLS, chroot) ont été surmontés grâce à une analyse méthodique et des ajustements précis. Le dépôt GitHub et la présentation PowerPoint sont prêts pour la revue, avec une documentation complète et des captures d'écran illustrant chaque étape.
